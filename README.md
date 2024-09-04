@@ -1,8 +1,8 @@
-# USB-Encryption
+# PRISM: USB-Encryption
 
 ## Objective
 
-The USB Encryption project aimed to develop a Python-based tool for secure file protection on portable storage devices. The focus was on implementing cryptographic methods to safeguard sensitive data while providing a user-friendly command-line interface for key generation, file encryption, and decryption. This project enhanced my understanding of cryptography principles, file system operations, and secure coding practices, simulating real-world data protection scenarios in a portable storage context.
+The PRISM USB Encryption project aimed to develop a Python-based tool for secure file protection on portable storage devices. The focus was on implementing cryptographic methods to safeguard sensitive data while providing a user-friendly command-line interface for key generation, file encryption, and decryption. This project enhanced my understanding of cryptography principles, file system operations, and secure coding practices, simulating real-world data protection scenarios in a portable storage context.
 
 
 ### Skills Learned
