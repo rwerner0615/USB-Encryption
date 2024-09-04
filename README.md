@@ -24,11 +24,51 @@ The USB Encryption project aimed to develop a Python-based tool for secure file 
 - Argparse module is used to parse command-line arguments and create a user-friendly interface.
 
 
-## Steps
-drag & drop screenshots here or use imgur and reference them using imgsrc
 
-Every screenshot should have some text explaining what the screenshot is about.
+# Steps
 
-Example below.
+## Installation
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/repo-name.git
+   cd repo-name
+   
+2. Install the required dependencies
+   ```bash
+   pip install cryptography
 
-*Ref 1: Network Diagram*
+## Generating an Encryption Key
+
+  Before encrypting or decrypting any files, you need to generate a secure encryption key. This key will be stored in a file called secret.key, which must be kept safe, as it's required to decrypt   the files.
+
+To generate a new encryption key:
+
+  ```bash
+  python PRISM.py generate_key
+  ```
+
+This will create a file secret.key in the same directory.
+
+## Encrypting Files and Filenames
+   
+  Once you have generated the encryption key, you can encrypt all files and filenames in a specified directory (e.g., your USB drive).
+
+To encrypt files:
+
+```bash
+python PRISM.py encrypt <path_to_directory>
+```
+Replace <path_to_directory> with the actual path to the directory you want to encrypt (e.g., the path to your USB drive).
+
+
+## Decrypting Files and Filenames
+   
+  To decrypt the files and restore the filenames, you will need to use the same key that was used for encryption (secret.key).
+
+To decrypt files:
+
+```bash
+python PRISM.py decrypt <path_to_directory>
+```
+Again, replace <path_to_directory> with the actual path to the directory you want to decrypt.
+
