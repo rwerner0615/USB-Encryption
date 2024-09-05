@@ -120,19 +120,22 @@ def process_directory(directory, key, decrypt=False):
     print(f"{'Decryption' if decrypt else 'Encryption'} completed. Total files processed: {files_processed}")
 
 def main():
-    # Display instructions
-    show_instructions()
+    
     # Set up command-line argument parsing
     parser = argparse.ArgumentParser(description="Encrypt or Decrypt USB files")
-    parser.add_argument("mode", choices=["encrypt", "decrypt", "generate_key"], help="Mode: encrypt, decrypt, or generate_key")
+    parser.add_argument("mode", choices=["encrypt", "decrypt", "generate_key"], help="Mode: encrypt, decrypt, or generate_key", nargs='?')
     parser.add_argument("path", nargs='?', help="Path to the USB drive")
     args = parser.parse_args()
+
+    if args.mode is None:
+        show_instructions()
+        return
 
     if args.mode == "generate_key":
         generate_key()
         return
 
-    if not args.path:
+    if not args.path and args.mode in ["encrypt", "decrypt"]:
         print("Error: Path is required for encrypt and decrypt modes.")
         parser.print_help()
         return
