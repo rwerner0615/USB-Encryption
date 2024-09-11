@@ -1,4 +1,52 @@
-# PRISM: USB-Encryption
+# PRISM: USB-Encryption v2
+
+## Objective
+
+The **PRISM USB Encryption v2** project builds on the original by introducing performance optimizations and enhanced user experience features. In addition to the core encryption and decryption functionalities, v2 incorporates improvements in key management, advanced error handling, and batch processing for larger datasets. These updates enhance usability, efficiency, and compatibility with modern file systems, making the tool more robust for real-world applications.
+
+### Key Updates in PRISM v2
+
+- **Improved Command-Line Interface**: Clearer feedback during encryption/decryption processes, with support for batch operations across large file sets.
+- **Performance Optimizations**: Faster processing times, especially with large directories and USB drives.
+- **Enhanced Error Handling**: Better management of exceptions for incompatible file types or system errors during recursive file operations.
+- **File and Folder Integrity**: More efficient preservation of directory structure during encryption and decryption.
+- **Security Enhancements**: Updated cryptographic practices for stronger data protection.
+
+### Skills Enhanced
+
+- Advanced cryptographic methods using Python's Cryptography library
+- Optimized recursive file processing and directory structure management
+- Batch processing for large data sets
+- Robust command-line interface design with detailed user feedback
+- Comprehensive error handling for better system stability
+
+### Tools Used
+
+- **Python** for implementing core functionality
+- **Cryptography library (Fernet)** for secure encryption and decryption
+- **Command-line interface (CLI)** for a user-friendly experience
+- **OS module** for refined file system operations and directory management
+- **Argparse module** for efficient command parsing and batch operations
+
+# Steps
+
+## Installation
+1. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/repo-name.git
+   cd repo-name
+   
+2. Install the required dependencies
+   ```bash
+   pip install cryptography
+
+3. Run PRISMv2.py and it will walk you through the rest
+   ```bash
+   python PRISMv2.py
+<br />
+
+
+# PRISM: USB-Encryption (Outdated)
 
 ## Objective
 
@@ -22,6 +70,7 @@ The PRISM USB Encryption project aimed to develop a Python-based tool for secure
 - Command-line interface (CLI) for user interaction and script execution.
 - OS module for file system navigation and manipulation.
 - Argparse module is used to parse command-line arguments and create a user-friendly interface.
+
 
 
 
